@@ -14,7 +14,6 @@ function getCurrency(req, res, next) {
         if (err) return res.send(error(err))       
         if (!data) return res.send(defaultJson)
                 
-        console.log('1')
         var obj = JSON.parse(data)
 
         if (obj != null) response = obj

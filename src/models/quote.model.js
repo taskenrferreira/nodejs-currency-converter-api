@@ -10,8 +10,6 @@ function getQuotation(req, res, response, next) {
 
     const result = (req.query.amount * rate).toFixed(2)
 
-    console.log(result)
-
     return res.send({ ...req.query, result })
 }
 
